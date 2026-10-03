@@ -17,6 +17,9 @@ The principle: **don't learn everything at once.** Level up, apply, get feedback
 3. Mark progress in [`PROGRESS.md`](PROGRESS.md) after each task.
 4. All free resources are collected in [`RESOURCES.md`](RESOURCES.md).
 5. Concrete practice projects live in [`projects/`](projects/README.md).
+6. **Do the hands-on work in [`lab/`](lab/README.md)** — 15 modules + 8 workshops + exercises with tests and CI. Start at [`lab/SYLLABUS.md`](lab/SYLLABUS.md).
+
+> **Docs vs Lab:** the level folders (`00-fundamentals/` … `09-ai-engineering/`) are the *plan* — what to learn and why. [`lab/`](lab/README.md) is the *practice* — actual lessons, workshops, and code you write.
 
 **Ground rule:** every level follows the same format — 🎯 Target · 📚 Learn · 🧪 Exercise · 🐛 Bug Hunt · 🤖 AI Challenge · 📝 Evaluation · 🏆 Final Task · ✅ Pass checklist.
 

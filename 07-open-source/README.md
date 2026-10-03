@@ -1,21 +1,21 @@
 # Level 7 — Open Source
 
-> 🎯 **Target:** menaikkan kredibilitas secara signifikan. Role Open Source Contributor Micro1 mencari **meaningful ownership/contributions**, bukan typo/documentation edits. Mereka ingin kandidat mampu menjelaskan repository, PR, issues, dan kode yang benar-benar dibuat sendiri.
+> 🎯 **Target:** raise your credibility significantly. Open Source Contributor roles look for **meaningful ownership/contributions**, not typo/documentation edits. They want candidates who can explain a repository, PRs, issues, and code they actually wrote themselves.
 
 ---
 
 ## 📚 Learn
 
 ```
-membaca codebase asing     git blame / history
-mencari good first issue   diskusi di issue
-standar PR project         CONTRIBUTING.md
-kode review & iterasi      ownership jangka panjang
+reading unfamiliar codebases     git blame / history
+finding good first issues        discussing in issues
+project PR standards             CONTRIBUTING.md
+code review & iteration          long-term ownership
 ```
 
-### Sumber gratis
+### Free sources
 - [Open Source Guides (GitHub)](https://opensource.guide/)
-- [First Contributions (latihan PR pertama)](https://github.com/firstcontributions/first-contributions)
+- [First Contributions (practice your first PR)](https://github.com/firstcontributions/first-contributions)
 - [Good First Issue](https://goodfirstissue.dev/)
 - [Up For Grabs](https://up-for-grabs.net/)
 - [First Timers Only](https://www.firsttimersonly.com/)
@@ -24,66 +24,66 @@ kode review & iterasi      ownership jangka panjang
 
 ## 🧪 Exercise
 
-### Bagian A — repo milikmu
-Bangun **1 repository milikmu** yang benar-benar berguna, mis.:
+### Part A — your own repo
+Build **1 repo of your own** that's genuinely useful, e.g.:
 
 ```
 github.com/naelrudd/ai-eval-kit
 ```
 
-Isi: AI coding evaluation toolkit. Lengkapi dengan:
-- [ ] Issues (roadmap kerja)
-- [ ] PRs (fitur lewat PR, bukan langsung push)
+An AI coding evaluation toolkit. Complete it with:
+- [ ] Issues (work roadmap)
+- [ ] PRs (features go through PRs, not direct pushes)
 - [ ] Tests + CI
-- [ ] Dokumentasi
+- [ ] Documentation
 - [ ] Releases + tags + changelog
 
-### Bagian B — kontribusi ke repo lain
-- [ ] Pilih project Python/TypeScript ukuran sedang (bukan langsung React/Linux).
-- [ ] Pelajari arsitekturnya, baca CONTRIBUTING.md.
-- [ ] Ambil 1 issue, ajukan PR bermakna (bukan typo/format).
-- [ ] Ikuti proses review sampai merged.
+### Part B — contribute to another repo
+- [ ] Pick a medium-sized Python/TypeScript project (not React/Linux yet).
+- [ ] Study its architecture, read CONTRIBUTING.md.
+- [ ] Take 1 issue, submit a meaningful PR (not a typo/format fix).
+- [ ] Follow the review process until merged.
 
 ---
 
 ## 🐛 Bug Hunt
 
-Temukan bug nyata di project open source yang kamu kontribusi. Tulis:
-- Reproduksi bug.
-- Akar masalah (bukan gejala).
+Find a real bug in an open-source project you contribute to. Document:
+- Bug reproduction.
+- Root cause (not the symptom).
 - Fix + test.
-- Penjelasan singkat untuk maintainer.
+- A short explanation for the maintainer.
 
 ---
 
 ## 🤖 AI Challenge
 
-Pakai agent untuk membantu memahami codebase asing, **tapi**:
-- Kamu harus bisa menjelaskan sendiri arsitektur & perubahanmu.
-- Jangan submit PR yang kamu sendiri tidak paham (maintainer akan tahu).
+Use an agent to help you understand an unfamiliar codebase, **but**:
+- You must be able to explain the architecture & your change yourself.
+- Never submit a PR you don't understand (maintainers will notice).
 
 ---
 
 ## 📝 Evaluation
 
-Tulis `contributions/README.md`: untuk tiap kontribusi, jelaskan
-*repo ini apa · masalahnya apa · kenapa fix-mu benar · bagaimana diuji*. Ini persis yang akan ditanya saat apply.
+Write `contributions/README.md`: for each contribution, explain
+*what this repo is · what the problem was · why your fix is right · how it was tested*. This is exactly what you'll be asked in interviews.
 
 ---
 
 ## 🏆 Final Task
 
-- [ ] `ai-eval-kit` (atau repo lain) punya issues, PR, CI, releases
-- [ ] Minimal **1 PR bermakna merged** di repo orang lain
-- [ ] `contributions/README.md` menjelaskan tiap kontribusi
-- [ ] Bisa menjelaskan arsitektur repo & kodemu sendiri
+- [ ] `ai-eval-kit` (or another repo) has issues, PRs, CI, releases
+- [ ] At least **1 meaningful PR merged** in someone else's repo
+- [ ] `contributions/README.md` explains each contribution
+- [ ] Can explain the repo architecture & your own code
 
 ---
 
-## ✅ Checklist lulus Level 7
+## ✅ Level 7 pass checklist
 
-- [ ] Nyaman membaca codebase yang belum pernah dilihat
-- [ ] Paham etika & standar kontribusi open source
-- [ ] Punya minimal 1 kontribusi bermakna yang merged
-- [ ] Bisa menjelaskan PR sendiri tanpa membaca catatan
-- [ ] Repo milikmu punya disiplin (issue → PR → test → release)
+- [ ] Comfortable reading a codebase you've never seen
+- [ ] Understand open-source etiquette & contribution standards
+- [ ] Have at least 1 meaningful merged contribution
+- [ ] Can explain your own PR without notes
+- [ ] Your own repo has discipline (issue → PR → test → release)

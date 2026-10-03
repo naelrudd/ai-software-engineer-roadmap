@@ -1,15 +1,15 @@
 # Progress Tracker
 
-Update checklist ini setiap selesai task. Commit perubahan biar kelihatan progres di GitHub.
+Update this checklist after each task. Commit changes so progress shows on GitHub.
 
-Legenda: `[ ]` belum · `[x]` selesai · `[~]` sedang jalan
+Legend: `[ ]` not started · `[x]` done · `[~]` in progress
 
 ---
 
 ## Status per level
 
-| Level | Nama | Status | Tanggal lulus |
-|-------|------|--------|---------------|
+| Level | Name | Status | Passed on |
+|-------|------|--------|-----------|
 | 0 | Fundamentals | `[ ]` | |
 | 1 | Git + Testing + Debugging | `[ ]` | |
 | 2 | Backend + API + Database | `[ ]` | |
@@ -23,77 +23,76 @@ Legenda: `[ ]` belum · `[x]` selesai · `[~]` sedang jalan
 
 ---
 
-## Fase 1 (Minggu 1–3)
+## Phase 1 (Weeks 1–3)
 
-- [ ] Repo `nael-algorithms` dibuat + struktur folder
-- [ ] 10 soal Python + test (Minggu 1)
-- [ ] Semua lewat branch → PR → merge
-- [ ] pytest fixtures + mock dikuasai (Minggu 2)
-- [ ] 20+ test, min. 3 test yang sengaja menangkap bug
-- [ ] 25–40 soal DSA selesai (Minggu 3)
-- [ ] Apply AI Evaluation + SWE Evaluation
+- [ ] `nael-algorithms` repo created + folder structure
+- [ ] 10 Python problems + tests (Week 1)
+- [ ] Everything via branch → PR → merge
+- [ ] pytest fixtures + mock mastered (Week 2)
+- [ ] 20+ tests, at least 3 that deliberately catch bugs
+- [ ] 25–40 DSA problems solved (Week 3)
+- [ ] Apply: AI Evaluation + SWE Evaluation
 
-## Fase 2 (Minggu 4–6)
+## Phase 2 (Weeks 4–6)
 
-- [ ] REST API `nael-api-lab` (CRUD + auth + pagination + rate limit)
-- [ ] PostgreSQL + migrasi + index + test integrasi
-- [ ] Dockerfile + docker compose jalan
-- [ ] GitHub Actions: test → lint → build (badge hijau)
-- [ ] Apply SWE $50–70 + Full Stack
+- [ ] REST API `nael-api-lab` (CRUD + auth + pagination + rate limiting)
+- [ ] PostgreSQL + migrations + indexes + integration tests
+- [ ] Dockerfile + docker compose works
+- [ ] GitHub Actions: test → lint → build (green badge)
+- [ ] Apply: SWE $50–70 + Full Stack
 
-## Fase 3 (Minggu 7–9)
+## Phase 3 (Weeks 7–9)
 
-- [ ] `AGENTS.md` + workflow agent end-to-end
-- [ ] `ai-eval-kit`: 20 evaluasi tertulis (rubric + rationale)
-- [ ] 5 coding-agent task + deterministic verifier
-- [ ] Property-based test pakai Hypothesis
-- [ ] Apply AI/software evaluation + Senior SWE
+- [ ] `AGENTS.md` + end-to-end agent workflow
+- [ ] `ai-eval-kit`: 20 written evaluations (rubric + rationale)
+- [ ] 5 coding-agent tasks + deterministic verifiers
+- [ ] Property-based tests with Hypothesis
+- [ ] Apply: AI/software evaluation + Senior SWE
 
-## Fase 4 (Minggu 10–12)
+## Phase 4 (Weeks 10–12)
 
-- [ ] 1 PR open source bermakna merged
+- [ ] 1 meaningful open-source PR merged
 - [ ] `nael-go-api` + PostgreSQL + Docker + CI
 - [ ] RAG prototype + eval harness
-- [ ] Apply Open Source Contributor + Go/Python/TS
+- [ ] Apply: Open Source Contributor + Go/Python/TS
 
 ---
 
-## Catatan mingguan
+## Weekly notes
 
-Tulis 2–3 baris tiap minggu: apa yang dipelajari, apa yang stuck, next step.
+Write 2–3 lines each week: what you learned, what you're stuck on, next step.
 
-### Minggu 1
-
-
-### Minggu 2
+### Week 1
 
 
-### Minggu 3
+### Week 2
 
 
-### Minggu 4
+### Week 3
 
 
-### Minggu 5
+### Week 4
 
 
-### Minggu 6
+### Week 5
 
 
-### Minggu 7
+### Week 6
 
 
-### Minggu 8
+### Week 7
 
 
-### Minggu 9
+### Week 8
 
 
-### Minggu 10
+### Week 9
 
 
-### Minggu 11
+### Week 10
 
 
-### Minggu 12
+### Week 11
 
+
+### Week 12

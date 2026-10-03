@@ -1,6 +1,6 @@
 # Level 1 — Git + Testing + Debugging
 
-> 🎯 **Target:** bukan sekadar *"pernah pakai"*, tapi **bisa membuat test yang sengaja menangkap bug**. Beberapa role Micro1 eksplisit minta Git/GitHub workflow, PR, code review, branching, diff analysis, CI logs, dan automated testing.
+> 🎯 **Target:** not just *"I've used it"*, but **can write a test that deliberately catches a bug**. Several Micro1 roles explicitly ask for Git/GitHub workflow, PRs, code review, branching, diff analysis, CI logs, and automated testing.
 
 ---
 
@@ -22,13 +22,13 @@ git rebase     git cherry-pick
 - **JS:** `Vitest` · `Jest`
 
 ### Debugging
-`pdb` · breakpoint · watch variable · stack trace · binary search debugging · `git bisect`
+`pdb` · breakpoints · watch variables · stack traces · binary-search debugging · `git bisect`
 
-### Sumber gratis
-- [Pro Git Book (gratis)](https://git-scm.com/book/en/v2) — bab 1–3 wajib
-- [Learn Git Branching (visual, interaktif)](https://learngitbranching.js.org/)
-- [Oh Shit, Git!?!](https://ohshitgit.com/) — cara keluar dari masalah Git umum
-- [GitHub Skills (kursus resmi interaktif)](https://github.com/skills)
+### Free sources
+- [Pro Git Book (free)](https://git-scm.com/book/en/v2) — chapters 1–3 are essential
+- [Learn Git Branching (visual, interactive)](https://learngitbranching.js.org/)
+- [Oh Shit, Git!?!](https://ohshitgit.com/) — how to escape common Git mistakes
+- [GitHub Skills (official interactive courses)](https://github.com/skills)
 - [GitHub Get Started](https://docs.github.com/en/get-started)
 - [pytest docs](https://docs.pytest.org/en/stable/)
 - [pytest fixtures](https://docs.pytest.org/en/stable/how-to/fixtures.html)
@@ -41,59 +41,59 @@ git rebase     git cherry-pick
 ## 🧪 Exercise
 
 ### Git drills
-Di repo `nael-algorithms`:
-1. Buat branch `feat/array-two-sum`, commit, buka PR, review sendiri, merge.
-2. Sengaja bikin konflik merge → selesaikan.
-3. Latihan `rebase` branch di atas `main`, lalu `cherry-pick` satu commit.
-4. Pakai `git bisect` untuk menemukan commit yang bikin test gagal.
+In the `nael-algorithms` repo:
+1. Create branch `feat/array-two-sum`, commit, open a PR, review it yourself, merge.
+2. Deliberately create a merge conflict → resolve it.
+3. Practice rebasing a branch onto `main`, then `cherry-pick` a commit.
+4. Use `git bisect` to find the commit that broke a test.
 
 ### Testing drills
-- Tulis test dengan `fixture` + `parametrize` + `mock`.
-- Bikin 3 test yang **harus gagal** dulu (menangkap bug), baru perbaiki kodenya.
-- Tulis 1 integration test yang memanggil API nyata (bukan mock).
+- Write tests with `fixture` + `parametrize` + `mock`.
+- Write 3 tests that **must fail** first (catching a bug), then fix the code.
+- Write 1 integration test that hits a real API (not a mock).
 
 ---
 
 ## 🐛 Bug Hunt
 
-Ambil kode orang (atau solusi AI), buat satu test yang membuktikan bug-nya, lalu:
+Take someone's code (or an AI solution), write a test that proves the bug, then:
 ```
-1. git bisect untuk cari asal bug (kalau ada history)
-2. tulis regression test
+1. git bisect to find the origin of the bug (if history exists)
+2. write a regression test
 3. fix
-4. pastikan semua test hijau
+4. make sure all tests are green
 ```
 
 ---
 
 ## 🤖 AI Challenge
 
-Minta AI menulis kode **tanpa test**. Tugasmu:
-1. Tulis test yang menguji edge case.
-2. Temukan minimal 1 bug.
-3. Tulis laporan: *"AI bilang X, padahal Y, karena Z."*
+Ask an AI to write code **without tests**. Your job:
+1. Write tests that probe edge cases.
+2. Find at least 1 bug.
+3. Write a report: *"The AI said X, but actually Y, because Z."*
 
 ---
 
 ## 📝 Evaluation
 
-Simulasi **code review**: ambil 1 PR AI-generated, review seperti senior engineer. Tulis komentar berisi: correctness, edge case, security, readability. Simpan di `reviews/pr-review-01.md`.
+Simulate a **code review**: take 1 AI-generated PR and review it like a senior engineer. Write comments covering: correctness, edge cases, security, readability. Save to `reviews/pr-review-01.md`.
 
 ---
 
 ## 🏆 Final Task
 
-- [ ] 1 PR nyata (branch → commit → PR → review → merge) terdokumentasi
-- [ ] ≥ 20 test di `nael-algorithms`, termasuk fixtures & mock
-- [ ] 3 regression test dari bug yang benar-benar ditemukan
-- [ ] `reviews/` berisi minimal 1 code review tertulis
+- [ ] 1 real PR (branch → commit → PR → review → merge) documented
+- [ ] ≥ 20 tests in `nael-algorithms`, including fixtures & mock
+- [ ] 3 regression tests from bugs you actually found
+- [ ] `reviews/` contains at least 1 written code review
 
 ---
 
-## ✅ Checklist lulus Level 1
+## ✅ Level 1 pass checklist
 
-- [ ] Bisa jelaskan `merge` vs `rebase` vs `cherry-pick` tanpa buka Google
-- [ ] Nyaman pakai PR, review, dan branch workflow
-- [ ] Bisa menulis test yang **gagal karena bug**, bukan cuma test yang lewat
-- [ ] Bisa debugging pakai `pdb` / debugger, bukan `print()` doang
-- [ ] Paham membaca CI logs
+- [ ] Can explain `merge` vs `rebase` vs `cherry-pick` without opening Google
+- [ ] Comfortable with PRs, reviews, and branch workflows
+- [ ] Can write a test that **fails because of a bug**, not just one that passes
+- [ ] Can debug with `pdb` / a debugger, not just `print()`
+- [ ] Can read CI logs

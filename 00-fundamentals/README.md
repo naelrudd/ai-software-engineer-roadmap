@@ -1,6 +1,6 @@
 # Level 0 — Programming Fundamentals
 
-> 🎯 **Target:** kamu bisa melihat kode orang lain dan berkata *"Oke, gue ngerti program ini melakukan apa"* — bukan cuma *"kalau bikin dari awal gue bisa"*. Pekerjaan Micro1 banyak minta review, debugging, code evaluation, dan memahami codebase asing.
+> 🎯 **Target:** you can look at someone else's code and say *"Okay, I understand what this program does"* — not just *"I could build it from scratch."* Micro1 work heavily involves review, debugging, code evaluation, and understanding unfamiliar codebases.
 
 ---
 
@@ -18,12 +18,12 @@
 ### Algorithms
 `sorting` · `searching` · `recursion` · `BFS` · `DFS` · `two pointers` · `sliding window` · `binary search` · `basic DP` · `Big-O`
 
-### Sumber gratis
-- [Python Tutorial resmi](https://docs.python.org/3/tutorial/)
-- [LearnPython.org (interaktif)](https://www.learnpython.org/)
+### Free sources
+- [Official Python Tutorial](https://docs.python.org/3/tutorial/)
+- [LearnPython.org (interactive)](https://www.learnpython.org/)
 - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
-- [NeetCode Roadmap (DSA terstruktur)](https://neetcode.io/roadmap)
+- [NeetCode Roadmap (structured DSA)](https://neetcode.io/roadmap)
 - [Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
 - [CP-Algorithms](https://cp-algorithms.com/)
 - [Exercism Python Track](https://exercism.org/tracks/python)
@@ -35,7 +35,7 @@ VS Code / Zed · Python · Node.js · Git · GitHub
 
 ## 🧪 Exercise
 
-Bikin repo **`nael-algorithms`** dengan struktur:
+Create the **`nael-algorithms`** repo with this structure:
 
 ```
 /arrays
@@ -47,56 +47,56 @@ Bikin repo **`nael-algorithms`** dengan struktur:
 /searching
 ```
 
-Setiap problem satu folder berisi:
+Each problem is one folder containing:
 
 ```
-problem.md        # deskripsi + contoh input/output
-solution.py       # solusi kamu
+problem.md        # description + example input/output
+solution.py       # your solution
 test_solution.py  # pytest
-README.md         # penjelasan + kompleksitas Big-O
+README.md         # explanation + Big-O complexity
 ```
 
-Target: **25–40 soal** tersebar di semua folder.
+Target: **25–40 problems** spread across all folders.
 
 ---
 
 ## 🐛 Bug Hunt
 
-Ambil 1 solusi yang pernah kamu tulis, sengaja rusak edge case-nya (mis. list kosong, duplikat, integer negatif). Tulis test yang menangkap bug itu **sebelum** memperbaikinya. Dokumentasikan di `README.md`.
+Take a solution you wrote earlier and deliberately break an edge case (e.g. empty list, duplicates, negative integers). Write the test that catches the bug **before** fixing it. Document it in `README.md`.
 
 ---
 
 ## 🤖 AI Challenge
 
-Minta AI (OpenCode / [CC]) menulis solusi untuk 3 soal. Lalu:
-1. Jalankan solusi AI.
-2. Cari minimal 1 bug / edge case yang terlewat.
-3. Tulis test yang membuktikannya.
-4. Perbaiki sendiri — jangan minta AI memperbaiki.
+Ask an AI (OpenCode / [CC]) to solve 3 problems. Then:
+1. Run the AI's solution.
+2. Find at least 1 bug / missed edge case.
+3. Write the test that proves it.
+4. Fix it yourself — don't ask the AI to fix it.
 
 ---
 
 ## 📝 Evaluation
 
-Bikin file `evaluation/ai-solutions-review.md`: untuk tiap solusi AI beri skor
-`Correctness / Edge cases / Complexity / Readability` (0–5) + alasan singkat.
+Create `evaluation/ai-solutions-review.md`: for each AI solution, score
+`Correctness / Edge cases / Complexity / Readability` (0–5) + a short rationale.
 
 ---
 
 ## 🏆 Final Task
 
-Repo `nael-algorithms` punya:
-- [ ] ≥ 25 soal, semua ada test dan lulus
-- [ ] README per soal dengan analisis Big-O
-- [ ] Minimal 3 test yang sengaja menangkap bug
-- [ ] CI sederhana yang menjalankan pytest di setiap push (lihat Level 1/3)
+The `nael-algorithms` repo has:
+- [ ] ≥ 25 problems, all with passing tests
+- [ ] A per-problem README with Big-O analysis
+- [ ] At least 3 tests that deliberately catch bugs
+- [ ] A simple CI running pytest on every push (see Level 1/3)
 
 ---
 
-## ✅ Checklist lulus Level 0
+## ✅ Level 0 pass checklist
 
-- [ ] Python: typing, exceptions, async, generator dipakai di kode nyata
-- [ ] TS/JS: paham Promise & closure, bukan hafal
-- [ ] Bisa analisis Big-O solusi sendiri
-- [ ] Bisa baca kode orang dan menjelaskan alurnya
-- [ ] `nael-algorithms` di-push ke GitHub
+- [ ] Python: typing, exceptions, async, generators used in real code
+- [ ] TS/JS: understand Promise & closures, not memorized
+- [ ] Can analyze the Big-O of your own solutions
+- [ ] Can read someone's code and explain its flow
+- [ ] `nael-algorithms` pushed to GitHub

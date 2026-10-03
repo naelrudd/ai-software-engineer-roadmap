@@ -1,13 +1,13 @@
 # Level 5 — AI Evaluation
 
-> 🎯 **Target:** ini **entry point** kamu. Bukan "cara pakai ChatGPT", tapi mengevaluasi output AI: membandingkan jawaban, memberi penilaian, menulis rationale, dan menemukan factual/technical errors. Role AI Evaluation Specialist minta AI Agents, Rubric-Based Evaluation, Quality Assurance, Process Improvement.
+> 🎯 **Target:** evaluate AI output — compare answers, assign scores, write rationales, and find factual/technical errors. Not "how to use ChatGPT". AI evaluation roles ask for AI Agents, Rubric-Based Evaluation, Quality Assurance, and Process Improvement.
 
 ---
 
 ## 📚 Learn
 
-### 1. Rubric
-Contoh bobot:
+### 1. Rubrics
+Example weights:
 ```
 Correctness       40%
 Completeness      20%
@@ -23,68 +23,68 @@ Answer A vs Answer B → Which is better? Why? What specific error exists?
 ```
 
 ### 3. Hallucination detection
-AI bilang: *"React automatically caches this API request."*
-Kamu harus bisa bilang: *"Incorrect. Here's why..."* — dengan bukti dari docs/source.
+AI says: *"React automatically caches this API request."*
+You must be able to say: *"Incorrect. Here's why..."* — with evidence from docs/source.
 
 ### 4. Code evaluation
-Cek: `correct? · edge cases? · security? · performance? · maintainability? · tests?`
+Check: `correct? · edge cases? · security? · performance? · maintainability? · tests?`
 
-### Sumber gratis
-- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — banyak course eval gratis
+### Free sources
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — many free eval courses
 - [[OI] Evals (framework)](https://github.com/openai/evals)
-- [promptfoo (eval LLM)](https://github.com/promptfoo/promptfoo)
-- [HELM (Stanford, eval LLM)](https://crfm.stanford.edu/helm/)
+- [promptfoo (LLM eval)](https://github.com/promptfoo/promptfoo)
+- [HELM (Stanford, LLM eval)](https://crfm.stanford.edu/helm/)
 
 ---
 
 ## 🧪 Exercise
 
-Bikin repo **`ai-eval-kit`**:
+Create the **`ai-eval-kit`** repo:
 
-- [ ] Tulis 3 rubric berbeda (coding task, Q&A teknis, refactoring).
-- [ ] Kumpulkan 20 pasang output AI → nilai pairwise + tulis rationale.
-- [ ] Temukan ≥ 5 hallucination teknis → dokumentasikan koreksi + sumber.
-- [ ] Evaluasi 10 potong kode AI: correctness, edge case, security, performance.
-- [ ] Bikin template evaluasi yang bisa dipakai berulang (`templates/`).
+- [ ] Write 3 different rubrics (coding task, technical Q&A, refactoring).
+- [ ] Collect 20 pairs of AI output → score pairwise + write rationales.
+- [ ] Find ≥ 5 technical hallucinations → document the correction + source.
+- [ ] Evaluate 10 pieces of AI code: correctness, edge cases, security, performance.
+- [ ] Build a reusable evaluation template (`templates/`).
 
 ---
 
 ## 🐛 Bug Hunt
 
-Cari output AI yang **kelihatan benar tapi salah** (subtle bug: off-by-one, salah async, salah lifetime, race condition). Tulis kenapa salah + test/repro yang membuktikan.
+Find AI output that **looks right but is wrong** (subtle bugs: off-by-one, wrong async, wrong lifetime, race condition). Write why it's wrong + a test/repro that proves it.
 
 ---
 
 ## 🤖 AI Challenge
 
-Minta AI menjawab 5 pertanyaan teknis (mis. soal HTTP, Python async, SQL). Nilai jawabannya pakai rubric kamu. Fokus: temukan error yang **tidak** terlihat jelas.
+Ask an AI to answer 5 technical questions (e.g. HTTP, Python async, SQL). Score its answers with your rubric. Focus: find errors that are **not** obvious.
 
 ---
 
 ## 📝 Evaluation
 
-Bikin `scoring-sheet.md` berisi:
-- Definisi tiap kriteria (biar konsisten antar-evaluator).
-- Contoh skor 0, 3, 5 untuk tiap kriteria (anchor).
-- Proses: baca → cek fakta → skor → rationale.
+Create `scoring-sheet.md` containing:
+- A definition of each criterion (so it's consistent across evaluators).
+- Example scores of 0, 3, 5 for each criterion (anchors).
+- Process: read → fact-check → score → rationale.
 
 ---
 
 ## 🏆 Final Task
 
-`ai-eval-kit` punya:
-- [ ] ≥ 3 rubric + template evaluasi
-- [ ] ≥ 20 evaluasi tertulis dengan rationale
-- [ ] ≥ 5 hallucination terdokumentasi + koreksi bersumber
-- [ ] `scoring-sheet.md` dengan anchor skor
-- [ ] README yang menjelaskan metodologi
+`ai-eval-kit` has:
+- [ ] ≥ 3 rubrics + evaluation templates
+- [ ] ≥ 20 written evaluations with rationales
+- [ ] ≥ 5 documented hallucinations + sourced corrections
+- [ ] `scoring-sheet.md` with score anchors
+- [ ] A README explaining the methodology
 
 ---
 
-## ✅ Checklist lulus Level 5
+## ✅ Level 5 pass checklist
 
-- [ ] Bisa menulis rationale evaluasi yang objektif & spesifik
-- [ ] Bisa mendeteksi hallucination dan membuktikannya
-- [ ] Bisa menilai kode AI di luar aspek "jalan/tidak"
-- [ ] Konsisten saat menilai (skor orang lain mirip)
-- [ ] Paham bias evaluator (length bias, verbosity bias, sycophancy)
+- [ ] Can write objective, specific evaluation rationales
+- [ ] Can detect hallucinations and prove them
+- [ ] Can judge AI code beyond "it runs/doesn't"
+- [ ] Consistent when scoring (your scores match others')
+- [ ] Understand evaluator bias (length bias, verbosity bias, sycophancy)

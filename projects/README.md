@@ -1,39 +1,39 @@
-# Projects — Portfolio Konkret
+# Projects — Concrete Portfolio
 
-Setiap level menghasilkan repo. Kumpulan ini jadi portfolio kamu saat apply Micro1.
+Every level produces a repo. Together they become your portfolio when you apply.
 
-| # | Repo | Level | Deskripsi | Status |
-|---|------|-------|-----------|--------|
-| 1 | `nael-algorithms` | 0–1 | DSA + Python, 25–40 soal, tiap soal ada test + analisis Big-O | `[ ]` |
-| 2 | `nael-api-lab` | 2–3 | REST API FastAPI + PostgreSQL + JWT + Docker + CI/CD | `[ ]` |
+| # | Repo | Level | Description | Status |
+|---|------|-------|-------------|--------|
+| 1 | `nael-algorithms` | 0–1 | DSA + Python, 25–40 problems, each with tests + Big-O analysis | `[ ]` |
+| 2 | `nael-api-lab` | 2–3 | REST API: FastAPI + PostgreSQL + JWT + Docker + CI/CD | `[ ]` |
 | 3 | `agent-workflow-lab` | 4 | AI agent workflow + `AGENTS.md` + context engineering | `[ ]` |
-| 4 | `ai-eval-kit` | 5–7 | AI coding evaluation toolkit (rubric, pairwise, hallucination) | `[ ]` |
-| 5 | `coding-agent-eval` | 6 | Coding task + reference solution + deterministic verifier + harness | `[ ]` |
+| 4 | `ai-eval-kit` | 5–7 | AI coding evaluation toolkit (rubrics, pairwise, hallucination) | `[ ]` |
+| 5 | `coding-agent-eval` | 6 | Coding tasks + reference solutions + deterministic verifiers + harness | `[ ]` |
 | 6 | `nael-go-api` | 8 | Go REST API + PostgreSQL + Docker + CI | `[ ]` |
 | 7 | `nael-ai-lab` | 9 | RAG + agents + eval harness + observability + deploy | `[ ]` |
-| 8 | `micro1-engineering-lab` | semua | Lab latihan gabungan (opsional, lihat bawah) | `[ ]` |
+| 8 | `engineering-lab` | all | Combined practice lab (optional, see below) | `[ ]` |
 
 ---
 
-## Aturan tiap repo
+## Rules for every repo
 
-Setiap repo portfolio **wajib** punya:
+Every portfolio repo **must** have:
 
-- [ ] README jelas: apa ini, kenapa dibuat, cara menjalankan, arsitektur.
-- [ ] Test yang lewat.
-- [ ] CI hijau (badge).
-- [ ] Riwayat commit rapi (commit kecil, pesan jelas).
-- [ ] Minimal 1 PR yang kamu review/merge sendiri.
-- [ ] Tidak ada secret di kode.
+- [ ] A clear README: what it is, why it exists, how to run it, its architecture.
+- [ ] Passing tests.
+- [ ] Green CI (badge).
+- [ ] Clean commit history (small commits, clear messages).
+- [ ] At least 1 PR you reviewed/merged yourself.
+- [ ] No secrets in the code.
 
 ---
 
-## (Opsional) `micro1-engineering-lab`
+## (Optional) `engineering-lab`
 
-Lab gabungan semua level dalam satu repo:
+A combined lab of all levels in one repo:
 
 ```
-micro1-engineering-lab/
+engineering-lab/
 ├── 01-python/
 ├── 02-algorithms/
 ├── 03-git/
@@ -48,7 +48,7 @@ micro1-engineering-lab/
 └── README.md
 ```
 
-Tiap level berisi:
+Each level contains:
 
 ```
 📚 Learn
@@ -59,23 +59,23 @@ Tiap level berisi:
 🏆 Final Task
 ```
 
-Contoh alur challenge:
+Example challenge flow:
 
 ```
-AI diberikan repository rusak.
-AI harus: menemukan bug → membuat patch → menulis test
-          → menjalankan test → memperbaiki
-Kamu kemudian mengevaluasi AI-nya.
+An AI is given a broken repository.
+The AI must: find the bug → write a patch → write tests
+            → run tests → fix
+Then you evaluate the AI's work.
 ```
 
-Itu melatih skill yang persis diminta beberapa listing Micro1.
+That trains the exact skill several evaluation roles ask for.
 
 ---
 
-## Checklist portfolio sebelum apply
+## Portfolio checklist before applying
 
-- [ ] Semua repo punya README berkualitas
-- [ ] Semua repo punya CI hijau
-- [ ] Profil GitHub dirapikan (bio, pinned repos)
-- [ ] Ada 1 PR open source merged (Level 7)
-- [ ] Bisa menjelaskan tiap repo dalam 2 menit
+- [ ] Every repo has a quality README
+- [ ] Every repo has green CI
+- [ ] GitHub profile tidied (bio, pinned repos)
+- [ ] At least 1 merged open-source PR (Level 7)
+- [ ] Can explain each repo in 2 minutes

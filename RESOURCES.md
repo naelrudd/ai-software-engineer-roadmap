@@ -1,11 +1,11 @@
-# Master Resources — Semua Sumber Gratis
+# Master Resources — All Free Sources
 
-Kumpulan seluruh sumber belajar, dikelompokkan per topik. Semua sudah diverifikasi live (status HTTP).
+Every learning source, grouped by topic. All verified live (HTTP status).
 
 ---
 
 ## Python
-- [Python Tutorial resmi](https://docs.python.org/3/tutorial/)
+- [Official Python Tutorial](https://docs.python.org/3/tutorial/)
 - [LearnPython.org](https://www.learnpython.org/)
 - [Exercism — Python Track](https://exercism.org/tracks/python)
 - [Real Python](https://realpython.com/)
@@ -93,6 +93,6 @@ Kumpulan seluruh sumber belajar, dikelompokkan per topik. Semua sudah diverifika
 
 ---
 
-## Catatan
-- Link diverifikasi dengan HTTP status (200). [Real Python](https://realpython.com/) mengembalikan 403 untuk bot, tapi normal di browser.
-- Micro1 listing berubah dari waktu ke waktu — cek ulang role & lokasi sebelum apply.
+## Notes
+- Links verified by HTTP status (200). [Real Python](https://realpython.com/) returns 403 to bots, but is normal in a browser.
+- Job listings change over time — re-check role and location before applying.

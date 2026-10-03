@@ -1,6 +1,6 @@
 # Level 3 — Docker + CI/CD + Cloud
 
-> 🎯 **Target:** bisa bilang secara konkret *"I built and maintained CI/CD workflows"* — bukan cuma menaruh GitHub Actions di daftar skill. Ada listing Micro1 yang eksplisit minta CI/CD + Python/Bash + REST API + OAuth + webhook + GitHub workflows.
+> 🎯 **Target:** be able to say concretely *"I built and maintained CI/CD workflows"* — not just list GitHub Actions as a skill. Many engineering roles explicitly ask for CI/CD + Python/Bash + REST API + OAuth + webhooks + GitHub workflows.
 
 ---
 
@@ -24,7 +24,7 @@ push → workflow → install deps → run tests → lint → build → deploy
 ### Bash & scripting
 `pipes` · `variables` · `loops` · `exit codes` · `set -euo pipefail`
 
-### Sumber gratis
+### Free sources
 - [Docker Get Started](https://docs.docker.com/get-started/)
 - [Docker Curriculum](https://docker-curriculum.com/)
 - [GitHub Actions Docs](https://docs.github.com/en/actions)
@@ -35,62 +35,62 @@ push → workflow → install deps → run tests → lint → build → deploy
 
 ## 🧪 Exercise
 
-Ambil salah satu project (mis. `nael-api-lab` atau **KanvasHub**), jadikan:
+Take one of your projects (e.g. `nael-api-lab`) and make it:
 
 ```
 PR → GitHub Actions → pytest / Vitest → build → deployment
 ```
 
-Task:
-- [ ] Tulis `Dockerfile` (multi-stage) untuk API.
-- [ ] Tulis `docker-compose.yml` (API + PostgreSQL).
-- [ ] Workflow CI: install → lint → test → build.
-- [ ] Workflow CD: deploy ke Railway/Render/Vercel.
-- [ ] Simpan secrets di GitHub Secrets, **jangan** di kode.
-- [ ] Tambahkan badge status CI di README.
+Tasks:
+- [ ] Write a `Dockerfile` (multi-stage) for the API.
+- [ ] Write a `docker-compose.yml` (API + PostgreSQL).
+- [ ] CI workflow: install → lint → test → build.
+- [ ] CD workflow: deploy to Railway/Render/Vercel.
+- [ ] Store secrets in GitHub Secrets, **never** in code.
+- [ ] Add a CI status badge to the README.
 
 ---
 
 ## 🐛 Bug Hunt
 
-- Image Docker kegedean (mis. 1GB+) → perbaiki pakai multi-stage + `.dockerignore`.
-- Container jalan lokal tapi gagal di CI → cari penyebab (versi, env, path, permission).
-- Test flaky di CI (kadang lolos kadang gagal) → temukan sumber non-determinisme.
+- Docker image too big (e.g. 1GB+) → fix with multi-stage + `.dockerignore`.
+- Container works locally but fails in CI → find the cause (version, env, path, permissions).
+- Flaky test in CI (sometimes passes, sometimes fails) → find the source of non-determinism.
 
 ---
 
 ## 🤖 AI Challenge
 
-Minta AI membuat workflow GitHub Actions. Periksa:
-1. Apakah pakai versi action yang benar (bukan `@master`)?
-2. Apakah caching dependency dipakai?
-3. Apakah secrets bocor ke log?
-4. Apakah workflow aman dari PR dari fork (permission)?
+Ask an AI to generate a GitHub Actions workflow. Check:
+1. Does it use pinned action versions (not `@master`)?
+2. Does it cache dependencies?
+3. Do secrets leak into logs?
+4. Is the workflow safe for PRs from forks (permissions)?
 
-Perbaiki + tulis catatan di `evaluation/ci-review.md`.
+Fix it + write notes in `evaluation/ci-review.md`.
 
 ---
 
 ## 📝 Evaluation
 
-Buat checklist review pipeline CI/CD (security, kecepatan, keandalan). Simpan di `docs/ci-checklist.md` — ini reusable untuk role evaluasi.
+Build a CI/CD pipeline review checklist (security, speed, reliability). Save it to `docs/ci-checklist.md` — this is reusable for evaluation roles.
 
 ---
 
 ## 🏆 Final Task
 
-- [ ] `docker compose up` jalan dari nol di mesin bersih
-- [ ] CI hijau di setiap PR + badge di README
-- [ ] Ada deploy otomatis (staging/production)
-- [ ] Secrets tidak ada di repo
-- [ ] `docs/ci-checklist.md` selesai
+- [ ] `docker compose up` works from scratch on a clean machine
+- [ ] CI green on every PR + badge in README
+- [ ] Automated deploy (staging/production)
+- [ ] No secrets in the repo
+- [ ] `docs/ci-checklist.md` complete
 
 ---
 
-## ✅ Checklist lulus Level 3
+## ✅ Level 3 pass checklist
 
-- [ ] Bisa menulis Dockerfile tanpa contekan
-- [ ] Paham layer caching & kenapa urutan `COPY` penting
-- [ ] Bisa debug pipeline CI yang gagal
-- [ ] Bisa deploy API + database ke cloud gratis
-- [ ] Paham prinsip 12-Factor (config via env)
+- [ ] Can write a Dockerfile without cheating
+- [ ] Understand layer caching & why `COPY` order matters
+- [ ] Can debug a failing CI pipeline
+- [ ] Can deploy an API + database to a free cloud tier
+- [ ] Understand 12-Factor principles (config via env)

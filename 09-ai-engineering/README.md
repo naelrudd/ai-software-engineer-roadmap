@@ -1,6 +1,6 @@
 # Level 9 — AI Engineering
 
-> 🎯 **Target:** role core-team. Micro1 punya **Forward Deployed Engineer** yang minta Python, LLM systems, ML infrastructure, RAG/AI automation, multi-agent systems, tool-using agents, evaluation harnesses, dan production deployment. Ada juga **AI/ML Engineer** (Python, LLMs, RAG, AWS).
+> 🎯 **Target:** core-team AI roles. Forward Deployed / AI-ML Engineer roles ask for Python, LLM systems, ML infrastructure, RAG/AI automation, multi-agent systems, tool-using agents, evaluation harnesses, and production deployment.
 
 ---
 
@@ -24,8 +24,8 @@ Python
         └── observability
 ```
 
-### Sumber gratis
-- [Generative AI for Beginners (Microsoft)](https://github.com/microsoft/generative-ai-for-beginners) — kurikulum 21 pelajaran
+### Free sources
+- [Generative AI for Beginners (Microsoft)](https://github.com/microsoft/generative-ai-for-beginners) — 21-lesson curriculum
 - [RAG from Scratch (LangChain)](https://github.com/langchain-ai/rag-from-scratch)
 - [LangChain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/)
 - [[OI] Cookbook](https://github.com/openai/openai-cookbook)
@@ -39,67 +39,67 @@ Python
 
 ## 🧪 Exercise
 
-Bikin repo **`nael-ai-lab`**:
+Create the **`nael-ai-lab`** repo:
 
-- [ ] **LLM basics:** panggil LLM API, streaming, structured output, function/tool calling.
+- [ ] **LLM basics:** call an LLM API, streaming, structured output, function/tool calling.
 - [ ] **Embeddings + vector DB:** chunking, indexing, similarity search (pgvector / FAISS / Chroma).
 - [ ] **RAG end-to-end:** ingest docs → retrieve → generate → cite sources.
-- [ ] **Agent:** tool-using agent dengan MCP, minimal 2 tools.
-- [ ] **Multi-agent:** 2 agent yang berkolaborasi (mis. planner + executor).
-- [ ] **Evaluation harness:** ukur retrieval (precision/recall) + jawaban (faithfulness, relevancy).
-- [ ] **Observability:** logging/tracing tiap panggilan LLM (token, latency, biaya).
+- [ ] **Agent:** tool-using agent with MCP, at least 2 tools.
+- [ ] **Multi-agent:** 2 agents collaborating (e.g. planner + executor).
+- [ ] **Evaluation harness:** measure retrieval (precision/recall) + answers (faithfulness, relevancy).
+- [ ] **Observability:** log/trace every LLM call (tokens, latency, cost).
 - [ ] **Production:** containerize + deploy + rate limit + fallback.
 
 ---
 
 ## 🐛 Bug Hunt
 
-Masalah RAG nyata yang wajib kamu temukan & perbaiki:
-- Retrieval mengambil chunk tidak relevan → perbaiki chunking/embedding/reranking.
-- Jawaban hallucinate walau konteks benar → perbaiki prompt/grounding.
-- Latency tinggi → caching / batching / model lebih kecil.
-- Biaya membengkak → ukur token, optimalkan prompt.
+Real RAG problems you must find & fix:
+- Retrieval returns irrelevant chunks → fix chunking/embedding/reranking.
+- Answers hallucinate even when context is correct → fix prompt/grounding.
+- High latency → caching / batching / a smaller model.
+- Costs ballooning → measure tokens, optimize the prompt.
 
 ---
 
 ## 🤖 AI Challenge
 
-Bangun **eval harness** untuk sistem RAG-mu sendiri. Buat dataset pertanyaan + jawaban acuan, ukur skor, dan tunjukkan versi mana yang lebih baik beserta alasannya. Ini yang membedakan AI Engineer biasa vs yang paham evaluasi.
+Build an **eval harness** for your own RAG system. Create a question set + reference answers, measure scores, and show which version is better and why. This is what separates a real AI Engineer from someone who can only demo.
 
 ---
 
 ## 📝 Evaluation
 
-Buat `eval/` berisi:
-- Dataset evaluasi (≥ 30 pertanyaan).
-- Metrik: retrieval precision/recall, answer faithfulness, relevancy, latency, cost.
-- Laporan perbandingan minimal 2 konfigurasi sistem.
+Create `eval/` containing:
+- An evaluation dataset (≥ 30 questions).
+- Metrics: retrieval precision/recall, answer faithfulness, relevancy, latency, cost.
+- A comparison report of at least 2 system configurations.
 
 ---
 
 ## 🏆 Final Task
 
-`nael-ai-lab` punya:
-- [ ] RAG end-to-end yang bisa dijalankan
-- [ ] Agent + tool calling (minimal 1 MCP tool)
-- [ ] Eval harness dengan metrik terukur
-- [ ] Observability (token, latency, biaya)
-- [ ] Deploy + README + arsitektur diagram
-- [ ] Laporan: konfigurasi mana terbaik & kenapa
+`nael-ai-lab` has:
+- [ ] A runnable end-to-end RAG
+- [ ] An agent + tool calling (at least 1 MCP tool)
+- [ ] An eval harness with measurable metrics
+- [ ] Observability (tokens, latency, cost)
+- [ ] Deploy + README + architecture diagram
+- [ ] A report: which configuration is best & why
 
 ---
 
-## ✅ Checklist lulus Level 9
+## ✅ Level 9 pass checklist
 
-- [ ] Bisa membangun & mengukur sistem RAG, bukan cuma demo
-- [ ] Paham tool calling & MCP dari sisi implementasi
-- [ ] Paham pola agent (routing, orchestration, evaluator-optimizer)
-- [ ] Bisa mengukur kualitas output AI secara objektif
-- [ ] Bisa deploy sistem AI ke produksi dengan aman
+- [ ] Can build & measure a RAG system, not just demo it
+- [ ] Understand tool calling & MCP from the implementation side
+- [ ] Understand agent patterns (routing, orchestration, evaluator-optimizer)
+- [ ] Can objectively measure AI output quality
+- [ ] Can deploy an AI system to production safely
 
 ---
 
-## Target jangka panjang
+## Long-term targets
 
 ```
 AI Software Engineering Expert

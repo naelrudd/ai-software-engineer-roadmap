@@ -1,8 +1,8 @@
 # Level 2 — Backend + API + Database
 
-> 🎯 **Target:** bisa membangun REST API yang benar (bukan cuma jalan), paham database, auth, dan error handling. Ini jalan menuju **Senior Software Engineer**. Micro1 minta backend, API, debugging, automated testing, dan scalable services.
+> 🎯 **Target:** build a REST API that's actually correct (not just running), understand databases, auth, and error handling. This is the path to **Senior Software Engineer**. Micro1 asks for backend, APIs, debugging, automated testing, and scalable services.
 
-Stack utama yang disarankan: **Python + FastAPI** (membuka jalan ke AI APIs → LLM → RAG → Agents).
+Recommended primary stack: **Python + FastAPI** (opens the road to AI APIs → LLM → RAG → Agents).
 
 ---
 
@@ -20,62 +20,62 @@ Stack utama yang disarankan: **Python + FastAPI** (membuka jalan ke AI APIs → 
 ### SQL & Database
 `SELECT/JOIN` · `Transactions` · `Indexes` · `Migrations` · `N+1 problem` · `EXPLAIN ANALYZE`
 
-### Sumber gratis
-- [FastAPI Tutorial resmi](https://fastapi.tiangolo.com/tutorial/) — sumber utama
+### Free sources
+- [Official FastAPI Tutorial](https://fastapi.tiangolo.com/tutorial/) — primary source
 - [FastAPI + SQL Databases](https://fastapi.tiangolo.com/tutorial/sql-databases/)
 - [MDN HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - [Roadmap.sh Backend](https://roadmap.sh/backend)
-- [SQLBolt (SQL interaktif)](https://sqlbolt.com/)
+- [SQLBolt (interactive SQL)](https://sqlbolt.com/)
 - [PostgreSQL Exercises](https://pgexercises.com/)
-- [PostgreSQL Tutorial resmi](https://www.postgresql.org/docs/current/tutorial.html)
+- [Official PostgreSQL Tutorial](https://www.postgresql.org/docs/current/tutorial.html)
 
 ---
 
 ## 🧪 Exercise
 
-Bikin repo **`nael-api-lab`** — REST API untuk satu domain (mis. todo, notes, atau bookmarks):
+Create the **`nael-api-lab`** repo — a REST API for one domain (e.g. todos, notes, or bookmarks):
 
-- [ ] CRUD lengkap (GET/POST/PUT/PATCH/DELETE)
-- [ ] Validasi input pakai Pydantic
-- [ ] Auth JWT (register + login + protected route)
+- [ ] Full CRUD (GET/POST/PUT/PATCH/DELETE)
+- [ ] Input validation with Pydantic
+- [ ] JWT auth (register + login + protected route)
 - [ ] Pagination + filtering + sorting
-- [ ] Rate limiting sederhana
-- [ ] Error handling terpusat (custom exception handler)
-- [ ] Logging terstruktur
-- [ ] Background job (mis. kirim email / proses async)
-- [ ] Test: unit + integration (pakai TestClient)
+- [ ] Simple rate limiting
+- [ ] Centralized error handling (custom exception handler)
+- [ ] Structured logging
+- [ ] A background job (e.g. send email / async processing)
+- [ ] Tests: unit + integration (using TestClient)
 
 ---
 
 ## 🐛 Bug Hunt
 
-Sengaja buat bug klasik backend, lalu temukan & perbaiki:
-- N+1 query (loop yang query DB per item) → fix pakai eager loading.
-- Endpoint tanpa validasi → input aneh bikin 500.
-- Race condition pada operasi baca-ubah-tulis.
+Deliberately create classic backend bugs, then find & fix them:
+- N+1 query (a loop querying the DB per item) → fix with eager loading.
+- Endpoint without validation → weird input causes a 500.
+- Race condition on a read-modify-write operation.
 
-Tulis regression test untuk masing-masing.
+Write a regression test for each.
 
 ---
 
 ## 🤖 AI Challenge
 
-Minta AI membangun 1 endpoint. Lalu periksa:
-1. Apakah ada validasi input? SQL injection?
-2. Apakah ada test?
-3. Apakah error handling benar (status code tepat)?
-4. Apakah efisien (jumlah query)?
+Ask an AI to build 1 endpoint. Then inspect:
+1. Is there input validation? SQL injection?
+2. Are there tests?
+3. Is error handling correct (right status codes)?
+4. Is it efficient (number of queries)?
 
-Perbaiki dan tulis evaluasinya di `evaluation/endpoint-review.md`.
+Fix it and write your evaluation in `evaluation/endpoint-review.md`.
 
 ---
 
 ## 📝 Evaluation
 
-Ambil 2 versi implementasi endpoint (punyamu vs punya AI). Bandingkan dengan rubric:
+Take 2 versions of an endpoint implementation (yours vs the AI's). Compare with the rubric:
 
-| Kriteria | Bobot |
-|----------|-------|
+| Criterion | Weight |
+|-----------|--------|
 | Correctness | 40% |
 | Edge cases | 20% |
 | Security | 20% |
@@ -86,19 +86,19 @@ Ambil 2 versi implementasi endpoint (punyamu vs punya AI). Bandingkan dengan rub
 
 ## 🏆 Final Task
 
-`nael-api-lab` punya:
-- [ ] API lengkap dengan dokumentasi otomatis (`/docs`)
-- [ ] PostgreSQL (bukan SQLite) + migrasi + index
-- [ ] Auth JWT + test integrasi
-- [ ] README berisi arsitektur + cara menjalankan
-- [ ] Badge CI hijau (lanjut ke Level 3)
+`nael-api-lab` has:
+- [ ] A complete API with auto-documentation (`/docs`)
+- [ ] PostgreSQL (not SQLite) + migrations + indexes
+- [ ] JWT auth + integration tests
+- [ ] A README with architecture + how to run
+- [ ] A green CI badge (continue in Level 3)
 
 ---
 
-## ✅ Checklist lulus Level 2
+## ✅ Level 2 pass checklist
 
-- [ ] Bisa jelaskan perbedaan 401 vs 403 vs 422 vs 500
-- [ ] Paham kenapa index penting dan kapan bikin index
-- [ ] Bisa membaca `EXPLAIN ANALYZE`
-- [ ] Bisa menulis integration test untuk API
-- [ ] Paham trade-off JWT vs session
+- [ ] Can explain the difference between 401 vs 403 vs 422 vs 500
+- [ ] Understand why indexes matter and when to add one
+- [ ] Can read `EXPLAIN ANALYZE`
+- [ ] Can write integration tests for an API
+- [ ] Understand the trade-off of JWT vs session

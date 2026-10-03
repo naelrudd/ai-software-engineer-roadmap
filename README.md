@@ -1,87 +1,106 @@
 # AI Software Engineer Roadmap
 
-Roadmap belajar 12 minggu menuju **AI Software Engineer / AI Evaluation Engineer** — disusun dari analisis role-role Micro1 (AI Evaluation, Software Engineer, Open Source Contributor, Forward Deployed Engineer, AI/ML Engineer) dan dipetakan ke skill di CV kamu.
+A universal, 12-week learning roadmap from **solid software fundamentals** to **AI Software Engineer / AI Evaluation Engineer** — then narrowing into whichever specialization you choose.
 
-Prinsipnya: **jangan belajar semuanya sekaligus.** Naik satu level, apply, dapat feedback, naik lagi.
+It's built to work for any self-taught developer with some web/backend experience, regardless of which company or platform you're targeting. Micro1 roles are used as one concrete reference point (they publish public listings with clear skill requirements), but the skills themselves are universal and portable.
 
-> Roadmap asli (hasil analisis awal) ada di [`docs/original-roadmap.md`](docs/original-roadmap.md).
+The principle: **don't learn everything at once.** Level up, apply, get feedback, level up again.
 
----
-
-## Cara pakai repo ini
-
-1. Buka [`CURRICULUM.md`](CURRICULUM.md) — rencana 12 minggu yang operasional (minggu 1–12, target per minggu).
-2. Kerjakan level secara berurutan, mulai dari [`00-fundamentals/`](00-fundamentals/README.md).
-3. Tandai progres di [`PROGRESS.md`](PROGRESS.md) setiap selesai task.
-4. Semua sumber gratis terkumpul di [`RESOURCES.md`](RESOURCES.md).
-5. Project latihan konkret ada di [`projects/`](projects/README.md).
-
-**Aturan main:** setiap level punya format sama — 🎯 Target · 📚 Learn · 🧪 Exercise · 🐛 Bug Hunt · 🤖 AI Challenge · 📝 Evaluation · 🏆 Final Task · ✅ Checklist lulus.
+> The original analysis that seeded this repo is in [`docs/original-roadmap.md`](docs/original-roadmap.md).
 
 ---
 
-## Peta level
+## How to use this repo
 
-| Level | Folder | Fokus | Fase | Buka lowongan |
-|-------|--------|-------|------|---------------|
-| 0 | [00-fundamentals](00-fundamentals/README.md) | Programming fundamentals, DSA | Fase 1 | — |
-| 1 | [01-git-testing-debugging](01-git-testing-debugging/README.md) | Git, testing, debugging | Fase 1 | AI Evaluation, SWE Evaluation |
-| 2 | [02-backend-api-database](02-backend-api-database/README.md) | FastAPI, SQL, PostgreSQL | Fase 2 | Software Engineer $50–70 |
-| 3 | [03-docker-ci-cd-cloud](03-docker-ci-cd-cloud/README.md) | Docker, GitHub Actions | Fase 2 | Full Stack $50–100 |
-| 4 | [04-ai-assisted-engineering](04-ai-assisted-engineering/README.md) | AI coding agents, MCP, context engineering | Fase 3 | SWE + AI workflow |
-| 5 | [05-ai-evaluation](05-ai-evaluation/README.md) | Rubrics, pairwise eval, hallucination | Fase 3 | AI/software evaluation |
-| 6 | [06-coding-agent-evaluation](06-coding-agent-evaluation/README.md) | SWE-bench style, deterministic verifiers | Fase 3 | Senior Software Engineer |
-| 7 | [07-open-source](07-open-source/README.md) | Kontribusi open source bermakna | Fase 4 | Open Source Contributor $100–150 |
-| 8 | [08-go](08-go/README.md) | Go + REST API + PostgreSQL | Fase 4 | Go/Python/TS $100–130 |
-| 9 | [09-ai-engineering](09-ai-engineering/README.md) | LLM, RAG, agents, MCP, eval harness | Fase 5 | Forward Deployed / AI-ML Engineer |
+1. Open [`CURRICULUM.md`](CURRICULUM.md) — the operational 12-week plan (week 1–12, target per week).
+2. Work through the levels in order, starting at [`00-fundamentals/`](00-fundamentals/README.md).
+3. Mark progress in [`PROGRESS.md`](PROGRESS.md) after each task.
+4. All free resources are collected in [`RESOURCES.md`](RESOURCES.md).
+5. Concrete practice projects live in [`projects/`](projects/README.md).
+
+**Ground rule:** every level follows the same format — 🎯 Target · 📚 Learn · 🧪 Exercise · 🐛 Bug Hunt · 🤖 AI Challenge · 📝 Evaluation · 🏆 Final Task · ✅ Pass checklist.
 
 ---
 
-## Aturan naik level (definition of done)
-
-Sebuah level **lulus** kalau semua ini terpenuhi:
-
-- [ ] Semua topik di bagian 📚 Learn sudah dipelajari (minimal 1 sumber utama + 1 latihan).
-- [ ] Semua 🧪 Exercise dikerjakan dan di-commit ke GitHub.
-- [ ] Minimal 1 🐛 Bug Hunt berhasil (menemukan bug nyata + menulis regression test).
-- [ ] 🤖 AI Challenge dikerjakan — kamu yang mengevaluasi AI, bukan sebaliknya.
-- [ ] 🏆 Final Task selesai dan di-push.
-- [ ] `PROGRESS.md` di-update.
-
----
-
-## Strategi apply (baca ini sebelum takut "belum siap")
+## The shape: universal core → specialization
 
 ```
-BELAJAR → BUILD → APPLY → INTERVIEW → GAGAL/LOLOS
-   → DAPAT FEEDBACK → BELAJAR LAGI → APPLY ROLE LEBIH TINGGI
+        UNIVERSAL CORE (Levels 0–4)
+   fundamentals · git · testing · backend · delivery · AI-assisted engineering
+                        │
+        ┌───────────────┼────────────────┬───────────────────┐
+        ▼               ▼                ▼                   ▼
+  AI EVALUATION   CODING-AGENT      OPEN SOURCE /       AI ENGINEERING
+   (Level 5)      EVALUATION         BACKEND / GO        (Level 9)
+                   (Level 6)          (Levels 7–8)        LLM · RAG · agents
 ```
 
-- Jangan tunggu merasa "siap". Requirement Micro1 banyak ditulis untuk senior.
-- Role **Global/Remote** lebih relevan untuk kamu (dari Indonesia).
-- Catatan: **AI Evaluation Specialist** yang muncul di Micro1 listing lokasinya US/Canada/UK/Ireland/Australia/NZ — cek ulang sebelum apply.
-- Kalau diterima di role kecil, kerja itu sendiri bagian dari learning path.
+Levels 0–4 are universal: they make you a competent, hireable software engineer and an effective AI-assisted developer. Levels 5–9 are where you narrow toward a specialization. You don't have to do all of them — pick the branch that matches the role you want.
 
 ---
 
-## Tools (jangan nambah 20 aplikasi baru)
+## Level map
+
+| Level | Folder | Focus | Core / Specialization |
+|-------|--------|-------|-----------------------|
+| 0 | [00-fundamentals](00-fundamentals/README.md) | Programming fundamentals, DSA | Universal core |
+| 1 | [01-git-testing-debugging](01-git-testing-debugging/README.md) | Git, testing, debugging | Universal core |
+| 2 | [02-backend-api-database](02-backend-api-database/README.md) | FastAPI, SQL, PostgreSQL | Universal core |
+| 3 | [03-docker-ci-cd-cloud](03-docker-ci-cd-cloud/README.md) | Docker, GitHub Actions | Universal core |
+| 4 | [04-ai-assisted-engineering](04-ai-assisted-engineering/README.md) | AI coding agents, MCP, context engineering | Universal core |
+| 5 | [05-ai-evaluation](05-ai-evaluation/README.md) | Rubrics, pairwise eval, hallucination | Specialization |
+| 6 | [06-coding-agent-evaluation](06-coding-agent-evaluation/README.md) | SWE-bench style, deterministic verifiers | Specialization |
+| 7 | [07-open-source](07-open-source/README.md) | Meaningful open-source contribution | Specialization |
+| 8 | [08-go](08-go/README.md) | Go + REST API + PostgreSQL | Specialization |
+| 9 | [09-ai-engineering](09-ai-engineering/README.md) | LLM, RAG, agents, MCP, eval harness | Specialization |
+
+---
+
+## Level-up rules (definition of done)
+
+A level **passes** only when all of these hold:
+
+- [ ] Every topic under 📚 Learn is covered (at least 1 primary source + 1 hands-on).
+- [ ] Every 🧪 Exercise is done and committed to GitHub.
+- [ ] At least 1 🐛 Bug Hunt succeeds (find a real bug + write a regression test).
+- [ ] The 🤖 AI Challenge is done — *you* evaluate the AI, not the reverse.
+- [ ] The 🏆 Final Task is complete and pushed.
+- [ ] `PROGRESS.md` is updated.
+
+---
+
+## Application strategy (read this before worrying you're "not ready")
+
+```
+LEARN → BUILD → APPLY → INTERVIEW → FAIL/PASS
+   → GET FEEDBACK → LEARN AGAIN → APPLY FOR A HIGHER ROLE
+```
+
+- Don't wait until you *feel* ready. Job requirements are often written for more senior people than the role really needs.
+- Remote/global roles are the most portable; local roles have their own market.
+- If you land a smaller role, that job itself becomes part of the learning path.
+- When a listing names a location restriction, read it carefully before applying — some roles are region-locked.
+
+---
+
+## Tools (don't add 20 new apps)
 
 ```
 Coding         : VS Code / Zed
-AI coding      : OpenCode, Claude Code
+AI coding      : OpenCode, [CC]
 Version control: Git + GitHub
 Backend        : Python + FastAPI
 Testing        : Pytest, Vitest/Jest
 Database       : PostgreSQL
 Container      : Docker
 CI/CD          : GitHub Actions
-AI             : OpenAI / Anthropic / OpenRouter
+AI             : [OI] / Anthropic / OpenRouter
 Agent          : MCP
 Deploy         : Vercel + Railway/Render/AWS
 ```
 
 ---
 
-## Progress sekilas
+## Progress at a glance
 
-Lihat [`PROGRESS.md`](PROGRESS.md) untuk checklist lengkap dan status per level.
+See [`PROGRESS.md`](PROGRESS.md) for the full checklist and per-level status.

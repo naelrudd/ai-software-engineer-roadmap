@@ -1,6 +1,6 @@
 # Level 4 — AI-Assisted Software Engineering
 
-> 🎯 **Target:** bukan *"AI bantu coding"*, tapi **mengontrol AI coding agent**. CV kamu sudah punya OpenCode / [CC] / Kiro — sekarang naik dari pemakai jadi operator. Micro1 eksplisit mencari orang yang terbiasa pakai AI assistants/agents dalam workflow developer.
+> 🎯 **Target:** not *"AI helps me code"*, but **controlling an AI coding agent**. If your CV already lists OpenCode / [CC] / Kiro, now you level up from user to operator. Many roles explicitly want people comfortable using AI assistants/agents in a developer workflow.
 
 ---
 
@@ -13,13 +13,13 @@ subagents               verification            test-driven development
 code review             diff review             plan mode
 ```
 
-### Workflow ideal
+### Ideal workflow
 ```
 AI Agent → Analyze repo → Plan → Implement → Run tests
    → Find failure → Fix → Run tests again → Review diff → Human approval
 ```
 
-### Sumber gratis
+### Free sources
 - [Building Effective Agents (Anthropic)](https://www.anthropic.com/engineering/building-effective-agents)
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
 - [OpenCode Docs](https://opencode.ai/docs)
@@ -29,65 +29,65 @@ AI Agent → Analyze repo → Plan → Implement → Run tests
 
 ## 🧪 Exercise
 
-Bikin repo **`agent-workflow-lab`**:
+Create the **`agent-workflow-lab`** repo:
 
-- [ ] Tulis `AGENTS.md` yang mengatur cara agent kerja di repo itu (konvensi, test command, larangan).
-- [ ] Siapkan task nyata (mis. tambah fitur kecil), lalu jalankan agent end-to-end: plan → implement → test → fix.
-- [ ] Dokumentasikan tiap langkah + di mana agent gagal dan kenapa.
-- [ ] Bandingkan hasil dengan 2 pendekatan prompt berbeda (context sedikit vs lengkap).
-- [ ] Buat 1 subagent / custom command (mis. `review-diff`, `write-tests`).
+- [ ] Write an `AGENTS.md` that governs how an agent works in that repo (conventions, test commands, prohibitions).
+- [ ] Prepare a real task (e.g. add a small feature), then run the agent end-to-end: plan → implement → test → fix.
+- [ ] Document each step + where the agent failed and why.
+- [ ] Compare results with 2 different prompt approaches (little context vs complete context).
+- [ ] Build 1 subagent / custom command (e.g. `review-diff`, `write-tests`).
 
-### Latihan context engineering
-- Beri agent konteks **kurang** → amati halusinasi.
-- Beri konteks **tepat** (file relevan + test) → amati akurasi.
-- Tulis pelajaran di `docs/context-engineering.md`.
+### Context engineering drill
+- Give the agent **too little** context → observe hallucination.
+- Give it **precise** context (relevant files + tests) → observe accuracy.
+- Write your findings in `docs/context-engineering.md`.
 
 ---
 
 ## 🐛 Bug Hunt
 
-Minta agent memperbaiki bug. Sengaja jangan kasih test. Periksa:
-- Apakah patch benar-benar menyelesaikan bug, atau cuma menutup gejala?
-- Apakah ada regresi?
-- Tulis test yang membuktikan patch benar/kurang.
+Ask the agent to fix a bug. Deliberately don't give it tests. Check:
+- Does the patch actually fix the bug, or just mask the symptom?
+- Are there regressions?
+- Write a test that proves the patch is right/wrong.
 
 ---
 
 ## 🤖 AI Challenge
 
-Desain "AI challenge" untuk dirimu sendiri: berikan repo rusak ke agent, minta ia memperbaiki, lalu **kamu nilai** hasilnya (correctness, ketepatan diff, kualitas test).
+Design an "AI challenge" for yourself: hand a broken repo to the agent, ask it to fix it, then **you grade** the result (correctness, diff precision, test quality).
 
 ---
 
 ## 📝 Evaluation
 
-Buat **rubric evaluasi diff AI**:
+Build an **AI diff evaluation rubric**:
 
-| Kriteria | Bobot |
-|----------|-------|
-| Apakah memperbaiki akar masalah | 35% |
-| Tidak menimbulkan regresi | 25% |
-| Kualitas test | 20% |
-| Kejelasan diff | 10% |
-| Efisiensi/kerapian | 10% |
+| Criterion | Weight |
+|-----------|--------|
+| Fixes the root cause | 35% |
+| No regressions | 25% |
+| Test quality | 20% |
+| Diff clarity | 10% |
+| Efficiency/cleanliness | 10% |
 
-Pakai untuk menilai 5 diff AI. Simpan di `evaluation/diff-scores.md`.
+Use it to grade 5 AI diffs. Save to `evaluation/diff-scores.md`.
 
 ---
 
 ## 🏆 Final Task
 
-- [ ] `agent-workflow-lab` dengan `AGENTS.md` + custom command/subagent
-- [ ] `docs/context-engineering.md` berisi temuan nyata
-- [ ] 5 diff AI dinilai dengan rubric
-- [ ] Bisa menjelaskan kapan agent gagal dan cara memperbaiki konteksnya
+- [ ] `agent-workflow-lab` with `AGENTS.md` + custom command/subagent
+- [ ] `docs/context-engineering.md` with real findings
+- [ ] 5 AI diffs graded with the rubric
+- [ ] Can explain when an agent fails and how to fix its context
 
 ---
 
-## ✅ Checklist lulus Level 4
+## ✅ Level 4 pass checklist
 
-- [ ] Paham perbedaan prompt vs context engineering
-- [ ] Bisa menulis `AGENTS.md` yang efektif
-- [ ] Paham cara kerja tool calling & MCP
-- [ ] Selalu verifikasi output agent dengan test, bukan percaya buta
-- [ ] Bisa mengukur kualitas diff AI secara sistematis
+- [ ] Understand the difference between prompt vs context engineering
+- [ ] Can write an effective `AGENTS.md`
+- [ ] Understand how tool calling & MCP work
+- [ ] Always verify agent output with tests, never trust blindly
+- [ ] Can measure AI diff quality systematically

@@ -107,3 +107,9 @@ Deploy         : Vercel + Railway/Render/AWS
 ## Progress at a glance
 
 See [`PROGRESS.md`](PROGRESS.md) for the full checklist and per-level status.
+
+---
+
+## License
+
+[MIT](LICENSE) © 2026 Nael Rudy
